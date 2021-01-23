@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vending_machine/screens/home_screen.dart';
+import 'package:vending_machine/ui/home_screen.dart';
+import 'package:vending_machine/utils/str_resource.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen(title: 'Vending Machine'),
+      home: HomeScreen(title: StrRes.appName),
     );
   }
 }
