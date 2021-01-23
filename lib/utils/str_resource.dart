@@ -1,9 +1,8 @@
 class StrRes {
-
   // App Text
   static const String appName = 'Vending Machine';
 
-  static const String balance = 'Saldo';
+  static const String balance = 'Saldo:  ';
 
   static const String biscuit = 'Biskuit';
   static const String chips = 'Chips';
@@ -38,7 +37,7 @@ class StrRes {
   static const String emptyProduct = 'Stok Habis';
   static const String zeroBalance = 'Anda tidak memiliki saldo';
   static const String takeProduct = 'Silahkan ambil makanan anda';
-  static const String takeChangeDesc = 'Silahkan ambil kembalian anda sebesar: ';
+  static const String takeChangeDesc =
+      'Silahkan ambil kembalian anda sebesar: ';
   static const String ok = 'OK';
-
 }

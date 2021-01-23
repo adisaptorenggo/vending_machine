@@ -1,13 +1,10 @@
-import 'package:flutter/material.dart';
-
-class Functions{
-
-  static String showAmountStr(String amount){
+class Functions {
+  static String showAmountStr(String amount) {
     return Functions.getDisplayAmountFormat('Rp', amount, ',', false, 2);
   }
 
-  static String getDisplayAmountFormat(String currencySymbol, String amount, String separatorSymbol,
-      bool useDecimal, int exponent) {
+  static String getDisplayAmountFormat(String currencySymbol, String amount,
+      String separatorSymbol, bool useDecimal, int exponent) {
     //Handling Leading Zeros
     amount = amount.replaceFirst("^0+", "");
 
@@ -27,6 +24,4 @@ class Functions{
     }
     return endResult;
   }
-
-
 }
