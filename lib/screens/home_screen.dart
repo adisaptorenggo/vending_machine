@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key, this.title}) : super(key: key);
 
-
   final String title;
 
   @override
@@ -11,13 +10,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,25 +17,178 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
+      body: Container(
+        margin: EdgeInsets.only(
+          bottom: 15,
+          top: 15,
+          right: 35,
+          left: 35
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+          children: [
+            Container(
+              margin: EdgeInsets.only(
+                bottom: 20
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    child: Text(
+                      'Cash'
+                    ),
+                  ),
+                  Container(
+                    child: Text(
+                      '5000'
+                    ),
+                  ),
+                ],
+              ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            Container(
+              child: Row(
+                children: [
+                  Container(
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Row(
+                            children: [
+                              Container(
+                                child: RaisedButton(
+                                  child: Text('Biskuit'),
+                                  elevation: 5,
+                                  onPressed: () {
+                                  },
+                                ),
+                              ),
+                              Container(
+                                child: Text(
+                                  '  : 10',
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(
+                          child: Row(
+                            children: [
+                              Container(
+                                child: RaisedButton(
+                                  child: Text('Biskuit'),
+                                  elevation: 5,
+                                  onPressed: () {
+                                  },
+                                ),
+                              ),
+                              Container(
+                                child: Text(
+                                  '  : 10',
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(
+                          child: Row(
+                            children: [
+                              Container(
+                                child: RaisedButton(
+                                  child: Text('Biskuit'),
+                                  elevation: 5,
+                                  onPressed: () {
+                                  },
+                                ),
+                              ),
+                              Container(
+                                child: Text(
+                                  '  : 10',
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(
+                          child: Row(
+                            children: [
+                              Container(
+                                child: RaisedButton(
+                                  child: Text('Biskuit'),
+                                  elevation: 5,
+                                  onPressed: () {
+                                  },
+                                ),
+                              ),
+                              Container(
+                                child: Text(
+                                  '  : 10',
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(
+                          child: Row(
+                            children: [
+                              Container(
+                                child: RaisedButton(
+                                  child: Text('Biskuit'),
+                                  elevation: 5,
+                                  onPressed: () {
+                                  },
+                                ),
+                              ),
+                              Container(
+                                child: Text(
+                                  '  : 10',
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Container(
+                            child: RaisedButton(
+                              child: Text('Masukkan Uang'),
+                              elevation: 5,
+                              onPressed: () {
+                              },
+                            ),
+                          ),
+                          Container(
+                            child: RaisedButton(
+                              child: Text('Pengembalian Uang'),
+                              elevation: 5,
+                              onPressed: () {
+                              },
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              child: RaisedButton(
+                child: Text('Masukkan Stok'),
+                elevation: 5,
+                onPressed: () {
+                },
+              ),
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
