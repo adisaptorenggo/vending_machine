@@ -15,7 +15,7 @@ class StrRes {
 
   static const String enterCash = 'Masukkan Uang';
   static const String takeChange = 'Ambil Kembalian';
-  static const String addStocks = 'Tambah Stok';
+  static const String addStocks = 'Edit Stok';
 
   static const String chooseCash = 'Pilih Uang';
   static const String twoThousands = 'Rp 2.000';
